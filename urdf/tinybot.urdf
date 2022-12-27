@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com)
+     Commit Version: 1.4.4-24-g24328f6  Build Version: 1.5.7084.36479
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="arc100ic2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0079258 5.3524E-05 0.12812"
+        rpy="0 0 0" />
+      <mass
+        value="13.418" />
+      <inertia
+        ixx="0.13734"
+        ixy="3.8873E-05"
+        ixz="0.0035268"
+        iyy="0.14138"
+        iyz="0.00022692"
+        izz="0.11173" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.5 0.5 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="0.0551280230274109 0.0445977839403992 0.119435059156477"
+        rpy="0 0 0" />
+      <mass
+        value="9.89285795738343" />
+      <inertia
+        ixx="0.100633282408297"
+        ixy="-0.000368613134367861"
+        ixz="-0.0246579705447439"
+        iyy="0.129854431598299"
+        iyz="-0.019875246883235"
+        izz="0.119289040637804" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.27391"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1459"
+      upper="3.1459"
+      effort="200"
+      velocity="4.0143" />
+    <safety_controller
+      soft_upper="2.96705"
+      soft_lower="-2.96705"
+      k_velocity="0" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="-8.73093225378652E-06 -0.123167800919542 0.277706747778899"
+        rpy="0 0 0" />
+      <mass
+        value="6.12717976196668" />
+      <inertia
+        ixx="0.329845249329456"
+        ixy="-5.17483533396187E-06"
+        ixz="1.61623101638262E-05"
+        iyy="0.329101570613941"
+        iyz="0.018431868349197"
+        izz="0.0150953082819112" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0.15 0 0.1760907567544"
+      rpy="0 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.1816"
+      upper="2.1816"
+      effort="250"
+      velocity="3.9269" />
+    <safety_controller
+      soft_upper="2.1816"
+      soft_lower="-2.1816"
+      k_velocity="0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.0821370737229578 0.00767983058773422 0.103368925323317"
+        rpy="0 0 0" />
+      <mass
+        value="5.31917369397232" />
+      <inertia
+        ixx="0.0609777481639329"
+        ixy="0.00223586291363752"
+        ixz="-0.0207224581595927"
+        iyy="0.0689825037841933"
+        iyz="0.00403767572663753"
+        izz="0.0315128650396838" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.6"
+      rpy="0 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.9008"
+      upper="3.9008"
+      effort="180"
+      velocity="4.0142" />
+    <safety_controller
+      soft_upper="3.9008"
+      soft_lower="-3.9008"
+      k_velocity="0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="0.199267860769998 -0.0521797017740084 -2.3405286299738E-05"
+        rpy="0 0 0" />
+      <mass
+        value="4.14127007626448" />
+      <inertia
+        ixx="0.00902167410693338"
+        ixy="0.00890664053379675"
+        ixz="1.19402360988763E-06"
+        iyy="0.083370457547304"
+        iyz="-3.84292918960806E-06"
+        izz="0.0854423327562984" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="0.19195 0 0.2"
+      rpy="0 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.3161"
+      upper="3.3161"
+      effort="120"
+      velocity="7.5049" />
+    <safety_controller
+      soft_upper="3.3161"
+      soft_lower="-3.3161"
+      k_velocity="0" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="-0.16754486328264 0.14663289585508 -0.795123572030433"
+        rpy="0 0 0" />
+      <mass
+        value="38.9158047740591" />
+      <inertia
+        ixx="5.54492781272747"
+        ixy="-0.305717777946462"
+        ixz="-1.29045363152984"
+        iyy="5.20065790645529"
+        iyz="-1.01808663536119"
+        izz="1.583956101465" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="0.4508 0 0"
+      rpy="-1.57079 0 -1.5708" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.3161"
+      upper="3.3161"
+      effort="100"
+      velocity="7.5049" />
+    <safety_controller
+      soft_upper="2.4434"
+      soft_lower="-2.4434"
+      k_velocity="0" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="-0.000132914747531077 -4.08006961549745E-15 0.00424266925821284"
+        rpy="0 0 0" />
+      <mass
+        value="0.0169439097865241" />
+      <inertia
+        ixx="7.8016469323529E-06"
+        ixy="-2.11758236813575E-21"
+        ixz="9.56751531575449E-09"
+        iyy="7.73828892188829E-06"
+        iyz="3.25578289100872E-21"
+        izz="1.50870060954925E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arc100ic2/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="revolute">
+    <origin
+      xyz="-0.006 0.088303 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.283"
+      upper="6.283"
+      effort="100"
+      velocity="10.996" />
+    <safety_controller
+      soft_upper="4.7138"
+      soft_lower="-4.7138"
+      k_velocity="0" />
+  </joint>
+</robot>
