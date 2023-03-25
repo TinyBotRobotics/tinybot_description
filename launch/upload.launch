@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!--test cmd: roslaunch tinybot_description tinybot7_rviz_test.launch limited:=true-->
+  <arg name="limited" default="true" doc="If true, limits joint range (-PI, PI) on all joints." />
+
+  <param name="robot_description"
+    command="$(find xacro)/xacro
+    --inorder '$(find tinybot_description)/urdf/tinybot_robot.xacro'
+    limited:=$(arg limited)" 
+  />
+</launch>
